@@ -27,10 +27,30 @@ input{
 .inputcss:focus{
     border-color:  rgb(124, 193, 250);
 }
+select {
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    border: solid 1px #ccc;
+    padding: 22.5px;
+}
+.selectcss:focus{
+    border-color:  rgb(124, 193, 250);
+}
 .center-content{
     text-align: center;
 }
+
 h1{
     text-align: center;
     color: rgb(255, 255, 255);
+}
+.btn-enviar {
+    width: 300px;
+    height: 50px;
+}
+.btn-enviar:focus{
+    background-color:  rgb(124, 193, 250);
 }

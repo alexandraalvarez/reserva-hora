@@ -12,14 +12,16 @@
 
     <h1>Formulario de registro</h1>
     <form class="form-register" onsubmit="return validar();">
-        <div class="contenedor-inputs">
+        <div class="contenedor-inputs"> <!--rut, nombre, apellido, edad, email, especialidad, fecha y hora-->
+            <input type="text" id="rut" name="rut" placeholder="Rut" class="inputcss">
             <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputcss">
             <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss">
+            <input type="number" id="edad" name="edad" placeholder="Edad" class="inputcss" min="1" max="3">
             <input type="email" id="correo" name="correo" placeholder="Correo" class="inputcss">
-            <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="inputcss">
-            <input type="password" id="pass" name="pass" placeholder="Contraseña" class="inputcss">
-            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono (911111111)" class="inputcss">
-            <input type="submit" value="Registrar" class="btn-enviar">
+            <select id="especialidad" name="especialidad" class="selectcss" ></select>
+            <input type="date" id="fecha" name="fecha" placeholder="Fecha" class="inputcss">
+            <input type="time" id="hora" name="hora" placeholder="Hora" class="inputcss">
+            <input type="submit" value="Reservar" class="btn-enviar">
 
         </div>
     </form> 

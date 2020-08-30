@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <h1>Formulario de registro</h1>
+    <h1>Formulario de reserva de horas</h1>
     <form class="form-register" onsubmit="return validar();">
         <div class="contenedor-inputs"> <!--rut, nombre, apellido, edad, email, especialidad, fecha y hora-->
             <input type="text" id="rut" name="rut" placeholder="Rut" class="inputcss">
@@ -18,15 +18,14 @@
             <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss">
             <input type="number" id="edad" name="edad" placeholder="Edad" class="inputcss" min="0" max="150">
             <input type="email" id="correo" name="correo" placeholder="Correo" class="inputcss">
-            <select id="especialidad" name="especialidad" aria-placeholder="Especialidad médica" class="selectcss" >
-                <option >Radiología</option> 
-                <option>Traumatología</option>
-                <option>Dental</option>
+            <select id="especialidad" name="especialidad" class="selectcss" >
+                <option value="Radiología">Radiología</option> 
+                <option value="Traumatología">Traumatología</option>
+                <option value="Dental">Dental</option>
             </select>
             <input type="date" id="fecha" name="fecha" placeholder="Fecha" class="inputcss">
             <input type="time" id="hora" name="hora" placeholder="Hora" class="inputcss">
             <input type="submit" value="Reservar" class="btn-enviar">
-
         </div>
     </form> 
     

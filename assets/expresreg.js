@@ -1,3 +1,6 @@
+function init() {
+}
+
 function validar(){
     //poner coma al declarar una variable evita poner var a cada una de ellas...
     var rut, nombre, apellidos, edad, correo, especialidad, fecha, hora, expresionRut, expresionCorreo, expresionLetraEspacio, 
@@ -50,11 +53,11 @@ function validar(){
         return false;
     } else {
         function validExito() {
-            var node = document.createElement("DIV");    
+            var node = document.createElement("H2");    
             var textnode = document.createTextNode(`Estimado(a) ${nombre} ${apellidos}, su hora para ${especialidad} ha sido reservada para el día ${fecha} 
             a las ${hora}. Además, se le envió un mensaje a su correo ${correo} con el detalle de su cita. Gracias por preferirnos`);        
             node.appendChild(textnode);                              
-            document.body.appendChild(node);
+            document.getElementById("msjHoraConf").appendChild(node);
         }
         validExito();
     }

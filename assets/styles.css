@@ -53,3 +53,8 @@ h1{
 .btn-enviar:focus{
     background-color:  rgb(124, 193, 250);
 }
+/*div mensaje*/
+#msjHoraConf {
+    background-color: #fff;
+    border-radius: 5px;
+}

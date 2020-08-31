@@ -55,12 +55,16 @@ function validar(){
         function validExito() {
             var node = document.createElement("H2");    
             var textnode = document.createTextNode(`Estimado(a) ${nombre} ${apellidos}, su hora para ${especialidad} ha sido reservada para el día ${fecha} 
-            a las ${hora}. Además, se le envió un mensaje a su correo ${correo} con el detalle de su cita. Gracias por preferirnos`);        
+            a las ${hora}. Además, se le envió un mensaje a su correo ${correo} con el detalle de su cita. Gracias por preferirnos.`);        
             node.appendChild(textnode);                              
             document.getElementById("msjHoraConf").appendChild(node);
         }
         validExito();
     }
 }
-    
+var botonSubmit = document.getElementById("btn-send")
+botonSubmit.addEventListener("click", function (evento) {
+    evento.preventDefault();
+    validar();
+});
 
